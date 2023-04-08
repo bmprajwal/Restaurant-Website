@@ -1,1 +1,3 @@
-Simple website for Restaurant using HTML and CSS
+Simple website for Restaurant using HTML and CSS.
+Planning to implement javascript soon......
+:)
