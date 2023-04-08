@@ -1,0 +1,107 @@
+/* Utility classes  */
+.h-primary{
+    font-size: 2rem;
+}
+#home p {
+    font-size: 1.2rem;
+}
+
+.h-secondary{
+    font-size: 2rem;
+}
+
+.btn{
+    padding: 12px 30px;
+    font-size: 1.4rem;
+}
+.description{
+    font-size: 1.1rem;
+}
+
+.title{
+    font-size: 1.2rem;
+}
+
+.pricing{
+    font-size: 1.2rem;
+}
+.para{
+    font-size: 0.9rem;
+}
+
+.name{
+    margin: 3px;
+    font-size: 1.3rem;
+}
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#logo img{
+    height: 40px;
+    margin: 0px;
+}
+#navbar ul li{
+    font-size: 1rem;
+}
+#navbar ul li a{
+    padding: 0px 20px 4px 20px;
+
+}
+/* Home section */
+#home{
+    height: 352px;
+}
+
+
+/* About section  */
+#about .image img{
+    height: 280px;
+}
+.content{
+    padding: 3px 10px;
+}
+.content p{
+    font-size: 0.8rem;
+}
+
+/* Types section  */
+#types{
+    height: 750px;
+}
+.food-types{
+    display: flex;
+    flex-direction: column;
+}
+.food-types .box{
+    margin: 10px;
+}
+.food-types .box img{
+    height: 200px;
+}
+
+/* Menu section  */
+
+.food img{
+    height: 140px;
+    width: 140px;
+}
+/* Testimonial section  */
+.review .customer{
+    margin: 20px 14px;
+}
+.customer img{
+    width: 140px;
+    height: 140px;
+}
+
+/* Contact section  */
+.contact-form {
+    margin: auto;
+}
+
+/* Footer section  */
+.footer h3{
+    font-size: 1.3rem;
+}
