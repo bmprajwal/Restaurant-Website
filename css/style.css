@@ -86,10 +86,11 @@ html{
     display: flex;
     align-items: center;
     top: 0px;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    min-height: 8vh;
 }
 #navbar::before{
     content: "";
@@ -101,12 +102,23 @@ html{
     height: 100%;
     box-shadow: 0px 3px 20px 3px grey;
 }
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
 /* Navbar: logo and img */
 #logo{
     margin: 1px 54px;
 }
 
 #logo img{
+    display: block;
     height: 63px;
     margin: 1px 54px;
 }
@@ -188,6 +200,15 @@ html{
     justify-content: space-around;
     width: 50%;
     padding: 5px 59px;
+}
+.scroll-text{
+    transform: translateY(60px);
+    transition: 1s all ease-in-out;
+    opacity: 0;
+}
+.scroll-appear{
+    opacity: 1;
+    transform: translateY(0px);
 }
 #about .image{
     width: 50%;
@@ -338,9 +359,47 @@ html{
     font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 700px){
-    #navbar ul, .contact img, .para{
+@media only screen and (max-width: 768px){
+    .contact img, .para{
         display: none;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-links{
+        position: absolute;
+        height: 92vh;
+        background-color: #fff;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+        right: 0px;
+        opacity: 0.9;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    .nav-active{
+        transform: translateX(0%);
     }
     .title{
         font-size: 0.8rem;
@@ -378,10 +437,22 @@ html{
     .footer h3{
         font-size: 1.3rem;
     }
+
 }
 
 @media only screen and (max-width: 444px){
     #about .image img{
         height: 100px;
+    }
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

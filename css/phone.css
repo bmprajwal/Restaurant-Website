@@ -36,7 +36,7 @@
 
 /* Navigation */
 #navbar{
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 #logo img{
     height: 40px;
@@ -51,7 +51,7 @@
 }
 /* Home section */
 #home{
-    height: 352px;
+    /* height: 352px; */
 }
 
 
